@@ -25,7 +25,7 @@ function checkPrayerTime(){
         return; // Exit the function if the alert is shown
     }
 
-    axios.get(`https:api.aladhan.com/v1/timingsByCity?country=${country}&city=${city}&method=1`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?country=${country}&city=${city}&method=1`)
     .then((responce) => {
         console.log(responce.data.data);
         let date = responce.data.data.date
