@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrayerTime</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-[#ebe3f8]">
+    <div class="w-full md:w-[475px] p-6 bg-[#CDC1FF] rounded-lg shadow-md">
+        <h1 class="flex items-center justify-center bg-[#E5D9F2] text-[#5441ca] shadow-md h-auto rounded-md text-3xl font-bold text-center mb-6">Check Prayer Time</h1>
+    <div class="bg-[#E5D9F2] mb-10 p-6 rounded-lg shadow-md">
+        <label for="countryName" class="block mb-4">
+            <span class="text-gray-700">Country Name:</span>
+            <input type="text" id="countryName" class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter Country Name">
+        </label>
+        <label for="cityName" class="block mb-4">
+            <span class="text-gray-700">City Name:</span>
+            <input type="text" id="cityName" class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter City Name">
+        </label>
+        <button onclick="checkPrayerTime()" class="w-full bg-[#A294F9] text-black py-2 rounded hover:bg-[#CDC1FF]">Check Prayer Time</button>
+    </div>
+    <div class="bg-[#E5D9F2] p-6 rounded-lg shadow-md">
+<div><p>
+    <spam id="date"></spam>
+</p></div>
+<div>
+    <spam id="hjri"></spam>
+</div>
+<div>
+    <spam id="citysName"></spam>
+ </div>
+<div>
+   <spam id="fajr"></spam>
+</div>
+<div>
+   <spam id="sunrise"></spam>
+</div>
+<div>
+   <spam id="dhuhr"></spam>
+</div>
+<div>
+   <spam id="asr"></spam>
+</div>
+<div>
+   <spam id="maghrib"></spam>
+</div>
+<div>
+    <spam id="sunset"></spam>
+ </div>
+<div>
+   <spam id="isha"></spam>
+</div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
